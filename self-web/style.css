@@ -1,0 +1,332 @@
+body{
+  font-family: 'Yu Gothic','DIN Alternate','Futura',sans-serif;
+}
+
+/*これは背景ボーダー*/
+.bg{
+  height: 1400px;
+/*  cssでbackground画像指定*/
+  background:url(../img/fb39c84d2a8eeeca49db24ed4f1428d4_m.jpg); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin:auto;
+  
+/*  これは黄色のヘッダー*/
+}
+.header{
+  height:85px;
+  width:100%;
+  background-color:#ffcb2b;
+  position: fixed;
+  z-index: 3;
+
+/*ヘッダー内テキスト*/
+}
+.header-comment{
+  width:100%;
+  color:#fff;
+  padding:25px;
+  font-size: 25px;
+  position: fixed;
+  text-align: center;
+  
+}
+
+/*ヘッダー内ハンバーガーメニュー*/
+
+.hamburger{
+  width: 30px;
+  height:50px;
+  float:right;
+  margin-top:34px; 
+  margin-right: 30px;
+
+}
+
+.hamburger span{
+  position: relative;
+  display: block;
+}
+
+.hamburger span:after,
+.hamburger span:before{
+  content: "";
+  position: absolute;
+/*  擬似要素が加えられたことにより、spanが増える*/
+}
+.hamburger span,
+.hamburger span:after,
+.hamburger span:before{
+  width:100%;
+  height:7px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+.hamburger span:before{
+  top:-12px;
+}
+.hamburger span:after{
+  top:12px;
+}
+.clearfix{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*ファーストビュー*/
+.first-view{
+  position: relative;
+  animation: FadeIn 1.5s ease;
+  margin:85px auto 20px 120px; 
+}
+
+/*プロフィール*/
+
+.profile>li:nth-child(odd){
+  height: 80px;
+  width: 80px;
+  background-color: #ffcb2b;
+  margin: 0 0 30px 60px;
+  text-align: center;
+  line-height: 80px;
+  color:#fff;
+  font-size: 30px;
+  transition: all 0.3s ease;
+  padding: 3px;
+}
+.profile>li:nth-child(even){
+  height: 80px;
+  width: 200px;
+  background-color: #fff;
+  margin: 0 0 30px 0;
+  text-align: center;
+  line-height: 80px;
+  font-size: 25px;
+  transition: all 0.3s ease;
+  color: slategray;
+}
+
+/*フレックスするよ*/
+.flex{
+  display:flex;
+  
+}
+.profile{
+  justify-content:center;
+  text-align: center;
+}
+
+.profile li:nth-child(odd):hover{
+  background-color: #f9a725;
+  font-size: 35px;
+  padding:20px;
+  
+}
+.neko>img{
+  height:15%;
+  width:15%;
+}
+.neko{
+  margin-left: 40px;
+  margin-top: 130px;
+  margin-bottom: 100px;
+  
+}
+.like>li{
+  background-color: #fff;
+  font-size: 28px;
+  margin-bottom: 30px;
+  line-height: 30px;
+  width:500px;
+  padding:10px;
+  color: slategray;
+  transition: all 0.3s ease;
+/*  border:solid 0.75px slategray; */
+}
+.like>li:nth-child(1){
+  background-color:#ffcb2b;
+  border: none;
+  color: #fff;
+}
+.like>li:last-child{
+  margin-bottom:0;
+}
+.like{
+  float:right;
+  margin-right: 400px;
+  background-color:#eaeaea;
+  padding: 30px;
+
+}
+
+.kurage{
+  margin-left: 400px;
+  position: relative;
+  animation: slideIn_r 1.5s ease;
+}
+.mark>li{
+  background-color: #fff;
+  font-size: 28px;
+  margin-bottom: 30px;
+  line-height: 30px;
+  width:500px;
+  padding:10px;
+  color: slategray;
+  transition: all 0.3s ease;
+}
+.mark>li:nth-child(1){
+  background-color:#ffcb2b;
+  color: #fff; 
+}
+.mark>li:last-child{
+  margin-bottom: 0;
+  
+}
+.mark{
+  margin:auto;
+  width:520px;
+  background-color:#eaeaea;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+@keyframes slideIn_r{
+ 0% {
+   bottom: -500px;
+   opacity: 0;
+    
+  }
+  100%{
+   bottom:0px;
+   opacity: 1;
+  }
+}
+
+@keyframes FadeIn{
+ 0% {
+   bottom: -500px;
+   opacity: 0; 
+  }
+  100%{
+   bottom:0px;
+  opacity: 1;
+  }
+}
+.like li:hover{
+    font-size: 30px;
+    padding:20px;
+   
+  }
+.mark>li:hover{
+    font-size: 30px;
+    padding:20px;
+}
+/*ここからフォーム*/
+.contact{
+  margin: 30px auto;
+  width: 960px;
+  background-color: #ffcb2b;
+  padding: 30px 50px;
+  color: #fff;
+/*  縦のpadding30px,横のpadding50px*/
+  font-size:20px;
+}
+.label{
+  width: 150px;
+  margin-right: 80px;
+  font-size: 20px;
+  color:darkslategrey;
+}
+
+
+.input-field{
+  width: 240px;
+  height: 40px;
+  line-height: 40px;
+}
+/*line-heightは行の高さ*/
+
+.form-group{
+  display: flex;
+  margin: 30px 0;
+  height: 40px;
+  align-items:center;
+}
+.button{
+  background-color: #ffcb2b;
+  color:white;
+  font-size: 20px;
+  width: 120px;
+  line-height: 50px;
+  margin-left: 230px;
+  border-radius: 5px;
+  text-align: center;
+}
+select{
+  font-size:18px;
+}
+form{
+  width: 960px;
+  background-color: #eaeaea;
+  padding:30px 50px;
+  margin: 30px auto;
+}
+
+.nyago{
+  display: block;
+  width:200px;
+  height: 200px;
+  padding: 20px;
+}
+.stamp{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  margin: 80px 300px 40px;
+  position: relative;
+  animation: FadeIn 1.5s ease;
+
+}
+.stamp_comment{
+  height:80px;
+  padding-top:50px;
+  text-align: center;
+  font-size: 30px;
+  color:slategray;
+  margin-top: 20px;
+}
+.stamp_comment p{
+  padding: 10px;
+  
+}
+a{
+  font-size: 25px;
+  text-align: center;
+  margin:20px 20px 40px;
+  display: block;}
+.bg3{
+  height: 600px;
+/*  cssでbackground画像指定*/
+  background:url(../img/fb39c84d2a8eeeca49db24ed4f1428d4_m.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin:auto;
+}
+.footer{
+  height:70px;
+  width: 100%;
+  background-color:#ffcb2b; 
+  padding:10px 0;
+}
+.footer p{
+  text-align: center;
+  line-height: 25px;
+  color:darkslategrey;
+  font-size: 6px;
+}

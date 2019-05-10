@@ -1,17 +1,21 @@
 body{
   font-family: 'Yu Gothic','DIN Alternate','Futura',sans-serif;
 }
-
+#wrapper{
+  width: 100%;
+  overflow: hidden;
+}
 /*これは背景ボーダー*/
 .bg{
-  height: 1400px;
+  width: 100vw;
 /*  cssでbackground画像指定*/
   background:url(../img/fb39c84d2a8eeeca49db24ed4f1428d4_m.jpg); 
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  margin:auto;
+  padding-bottom: 30px;
+  
   
 /*  これは黄色のヘッダー*/
 }
@@ -77,10 +81,21 @@ body{
 }
 
 /*ファーストビュー*/
+
+/*
+.container{
+  display: flex;
+}
+*/
 .first-view{
   position: relative;
   animation: FadeIn 1.5s ease;
-  margin:85px auto 20px 120px; 
+  margin:0 auto; 
+  padding-top: 85px; 
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 /*プロフィール*/
@@ -90,23 +105,24 @@ body{
   width: 80px;
   background-color: #ffcb2b;
   margin: 0 0 30px 60px;
-  text-align: center;
   line-height: 80px;
   color:#fff;
   font-size: 30px;
   transition: all 0.3s ease;
-  padding: 3px;
 }
 .profile>li:nth-child(even){
   height: 80px;
   width: 200px;
   background-color: #fff;
   margin: 0 0 30px 0;
-  text-align: center;
+ 
   line-height: 80px;
   font-size: 25px;
   transition: all 0.3s ease;
   color: slategray;
+}
+.profile>li:first-child{
+    margin-left:0;
 }
 
 /*フレックスするよ*/
@@ -144,6 +160,7 @@ body{
   padding:10px;
   color: slategray;
   transition: all 0.3s ease;
+  
 /*  border:solid 0.75px slategray; */
 }
 .like>li:nth-child(1){
@@ -226,14 +243,21 @@ body{
 }
 /*ここからフォーム*/
 .contact{
-  margin: 30px auto;
-  width: 960px;
+  margin: 30px auto 0;
+  width: 100vw;
   background-color: #ffcb2b;
   padding: 30px 50px;
   color: #fff;
 /*  縦のpadding30px,横のpadding50px*/
   font-size:20px;
 }
+form{
+  width: 100vw;
+  background-color: #eaeaea;
+  padding:30px 50px;
+  margin:auto;
+}
+
 .label{
   width: 150px;
   margin-right: 80px;
@@ -268,12 +292,6 @@ body{
 select{
   font-size:18px;
 }
-form{
-  width: 960px;
-  background-color: #eaeaea;
-  padding:30px 50px;
-  margin: 30px auto;
-}
 
 .nyago{
   display: block;
@@ -295,13 +313,13 @@ form{
   height:80px;
   padding-top:50px;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   color:slategray;
   margin-top: 20px;
 }
 .stamp_comment p{
   padding: 10px;
-  
+  text-align: center;
 }
 a{
   font-size: 25px;
@@ -320,7 +338,7 @@ a{
 }
 .footer{
   height:70px;
-  width: 100%;
+  width: 100vw;
   background-color:#ffcb2b; 
   padding:10px 0;
 }

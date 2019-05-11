@@ -31,7 +31,7 @@ body{
 .header-comment{
   width:100%;
   color:#fff;
-  padding:25px;
+  padding:27px;
   font-size: 25px;
   position: fixed;
   text-align: center;
@@ -241,22 +241,37 @@ body{
     font-size: 30px;
     padding:20px;
 }
+
+
 /*ここからフォーム*/
-.contact{
-  margin: 30px auto 0;
-  width: 100vw;
+.contact-comment{
   background-color: #ffcb2b;
   padding: 30px 50px;
   color: #fff;
+  text-align: center;
 /*  縦のpadding30px,横のpadding50px*/
   font-size:20px;
 }
-form{
-  width: 100vw;
+.contact{
+  width: 100%;
   background-color: #eaeaea;
-  padding:30px 50px;
-  margin:auto;
+ 
 }
+form{
+  padding:30px 50px;
+  width: 40%;
+  margin-left:auto;
+  margin-right:auto;
+ 
+  }
+.form-group{
+  display: flex;
+  margin: 30px 0;
+  height: 40px;
+  align-items:center;
+  width: 100%;
+}
+
 
 .label{
   width: 150px;
@@ -267,30 +282,26 @@ form{
 
 
 .input-field{
-  width: 240px;
+  width: 350px;
   height: 40px;
   line-height: 40px;
 }
 /*line-heightは行の高さ*/
 
-.form-group{
-  display: flex;
-  margin: 30px 0;
-  height: 40px;
-  align-items:center;
-}
+/*ボタン*/
 .button{
   background-color: #ffcb2b;
   color:white;
   font-size: 20px;
   width: 120px;
   line-height: 50px;
-  margin-left: 230px;
+  margin-left: 44.7%;
   border-radius: 5px;
   text-align: center;
 }
-select{
-  font-size:18px;
+.stamp-box{
+  margin-bottom: 50px;
+  background-color: #fff;
 }
 
 .nyago{
@@ -304,7 +315,7 @@ select{
   justify-content: center;
   flex-wrap: wrap;
   background-color: #fff;
-  margin: 80px 300px 40px;
+  margin: 3% 20% 5%;
   position: relative;
   animation: FadeIn 1.5s ease;
 
@@ -324,7 +335,7 @@ select{
 a{
   font-size: 25px;
   text-align: center;
-  margin:20px 20px 40px;
+  padding:20px 20px 40px;
   display: block;}
 .bg3{
   height: 600px;

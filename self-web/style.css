@@ -1,10 +1,12 @@
 body{
   font-family: 'Yu Gothic','DIN Alternate','Futura',sans-serif;
 }
-
+#wrapper{
+  overflow: hidden;
+  width: 100%;
+}
 /*これは背景ボーダー*/
 .bg{
-  height: 1400px;
 /*  cssでbackground画像指定*/
   background:url(../img/fb39c84d2a8eeeca49db24ed4f1428d4_m.jpg); 
   background-repeat: no-repeat;
@@ -12,6 +14,7 @@ body{
   background-size: cover;
   background-attachment: fixed;
   margin:auto;
+  height: 110%;
   
 /*  これは黄色のヘッダー*/
 }
@@ -78,9 +81,11 @@ body{
 
 /*ファーストビュー*/
 .first-view{
+  width: 100%;
   position: relative;
   animation: FadeIn 1.5s ease;
-  margin:85px auto 20px 120px; 
+  margin-top: 85px;
+  
 }
 
 /*プロフィール*/
@@ -89,26 +94,27 @@ body{
   height: 80px;
   width: 80px;
   background-color: #ffcb2b;
-  margin: 0 0 30px 60px;
+  margin: 30px 0 30px 60px;
   text-align: center;
   line-height: 80px;
   color:#fff;
   font-size: 30px;
   transition: all 0.3s ease;
-  padding: 3px;
 }
 .profile>li:nth-child(even){
   height: 80px;
   width: 200px;
   background-color: #fff;
-  margin: 0 0 30px 0;
+  margin: 30px 0 30px 0;
   text-align: center;
   line-height: 80px;
   font-size: 25px;
   transition: all 0.3s ease;
   color: slategray;
 }
-
+.profile>li:first-child{
+  margin-left: 0px;
+}
 /*フレックスするよ*/
 .flex{
   display:flex;
@@ -125,22 +131,24 @@ body{
   padding:20px;
   
 }
+/*猫の写真*/
+
 .neko>img{
   height:15%;
   width:15%;
 }
 .neko{
-  margin-left: 40px;
-  margin-top: 130px;
+text-align: center;
+  margin-top: 100px;
   margin-bottom: 100px;
   
 }
 .like>li{
   background-color: #fff;
   font-size: 28px;
-  margin-bottom: 30px;
+  margin:0 auto 30px;
   line-height: 30px;
-  width:500px;
+  width:50%;
   padding:10px;
   color: slategray;
   transition: all 0.3s ease;
@@ -154,25 +162,27 @@ body{
 .like>li:last-child{
   margin-bottom:0;
 }
+.like-box{
+  margin: 20px auto;
+}
 .like{
-  float:right;
-  margin-right: 400px;
-  background-color:#eaeaea;
+  margin: 20px 0 50px;
+  background-color:rgba(23, 56, 68, 0.15);
   padding: 30px;
-
+  text-align: center;
+  
 }
 
 .kurage{
-  margin-left: 400px;
   position: relative;
   animation: slideIn_r 1.5s ease;
 }
 .mark>li{
   background-color: #fff;
   font-size: 28px;
-  margin-bottom: 30px;
+  margin:0 auto 30px;
   line-height: 30px;
-  width:500px;
+  width:50%;
   padding:10px;
   color: slategray;
   transition: all 0.3s ease;
@@ -186,11 +196,10 @@ body{
   
 }
 .mark{
-  margin:auto;
-  width:520px;
-  background-color:#eaeaea;
-  padding: 30px;
-  margin-bottom: 30px;
+  margin:20px 0 0;
+  background-color:rgba(23, 56, 68, 0.15);
+  padding: 50px 0 80px 0;
+  text-align: center;
 }
 
 @keyframes slideIn_r{
@@ -226,11 +235,14 @@ body{
 }
 /*ここからフォーム*/
 .contact{
-  margin: 30px auto;
-  width: 960px;
+height: auto;
+}
+.contact-comment{
+  width: 100%;
   background-color: #ffcb2b;
-  padding: 30px 50px;
+  padding: 30px 0;
   color: #fff;
+  text-align: center;
 /*  縦のpadding30px,横のpadding50px*/
   font-size:20px;
 }
@@ -248,10 +260,17 @@ body{
   line-height: 40px;
 }
 /*line-heightは行の高さ*/
-
+form{
+  width: 100%;
+  background-color: #eaeaea;
+  padding:30px 50px;
+  display: flex;
+  flex-direction: column;
+ 
+}
 .form-group{
   display: flex;
-  margin: 30px 0;
+  margin: 30px auto;
   height: 40px;
   align-items:center;
 }
@@ -268,12 +287,8 @@ body{
 select{
   font-size:18px;
 }
-form{
-  width: 960px;
-  background-color: #eaeaea;
-  padding:30px 50px;
-  margin: 30px auto;
-}
+
+
 
 .nyago{
   display: block;
@@ -286,7 +301,7 @@ form{
   justify-content: center;
   flex-wrap: wrap;
   background-color: #fff;
-  margin: 80px 300px 40px;
+  margin: 5% 10% 5%;
   position: relative;
   animation: FadeIn 1.5s ease;
 
@@ -309,14 +324,13 @@ a{
   margin:20px 20px 40px;
   display: block;}
 .bg3{
-  height: 600px;
+  
 /*  cssでbackground画像指定*/
   background:url(../img/fb39c84d2a8eeeca49db24ed4f1428d4_m.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  margin:auto;
 }
 .footer{
   height:70px;

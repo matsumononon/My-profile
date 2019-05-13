@@ -2,20 +2,33 @@ body{
   font-family: 'Yu Gothic','DIN Alternate','Futura',sans-serif;
 }
 #wrapper{
+<<<<<<< HEAD
   width: 100%;
   overflow: hidden;
 }
 /*これは背景ボーダー*/
 .bg{
   width: 100vw;
+=======
+  overflow: hidden;
+  width: 100%;
+}
+/*これは背景ボーダー*/
+.bg{
+>>>>>>> responsive
 /*  cssでbackground画像指定*/
   background:url(../img/fb39c84d2a8eeeca49db24ed4f1428d4_m.jpg); 
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
+<<<<<<< HEAD
   padding-bottom: 30px;
   
+=======
+  margin:auto;
+  height: 110%;
+>>>>>>> responsive
   
 /*  これは黄色のヘッダー*/
 }
@@ -31,7 +44,11 @@ body{
 .header-comment{
   width:100%;
   color:#fff;
+<<<<<<< HEAD
   padding:27px;
+=======
+  padding:25px 0 25px 0;
+>>>>>>> responsive
   font-size: 25px;
   position: fixed;
   text-align: center;
@@ -88,14 +105,20 @@ body{
 }
 */
 .first-view{
+  width: 100%;
   position: relative;
   animation: FadeIn 1.5s ease;
+<<<<<<< HEAD
   margin:0 auto; 
   padding-top: 85px; 
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
+=======
+  margin-top: 85px;
+  
+>>>>>>> responsive
 }
 
 /*プロフィール*/
@@ -104,7 +127,12 @@ body{
   height: 80px;
   width: 80px;
   background-color: #ffcb2b;
+<<<<<<< HEAD
   margin: 0 0 30px 60px;
+=======
+  margin: 30px 0 30px 60px;
+  text-align: center;
+>>>>>>> responsive
   line-height: 80px;
   color:#fff;
   font-size: 30px;
@@ -114,17 +142,27 @@ body{
   height: 80px;
   width: 200px;
   background-color: #fff;
+<<<<<<< HEAD
   margin: 0 0 30px 0;
  
+=======
+  margin: 30px 0 30px 0;
+  text-align: center;
+>>>>>>> responsive
   line-height: 80px;
   font-size: 25px;
   transition: all 0.3s ease;
   color: slategray;
 }
 .profile>li:first-child{
+<<<<<<< HEAD
     margin-left:0;
 }
 
+=======
+  margin-left: 0px;
+}
+>>>>>>> responsive
 /*フレックスするよ*/
 .flex{
   display:flex;
@@ -141,22 +179,33 @@ body{
   padding:20px;
   
 }
-.neko>img{
+/*猫の写真*/
+
+.kurage{
   height:15%;
   width:15%;
+  
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.kurage:hover{
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
 }
 .neko{
-  margin-left: 40px;
-  margin-top: 130px;
+text-align: center;
+  margin-top: 100px;
   margin-bottom: 100px;
   
 }
 .like>li{
   background-color: #fff;
   font-size: 28px;
-  margin-bottom: 30px;
+  margin:0 auto 30px;
   line-height: 30px;
-  width:500px;
+  width:50%;
   padding:10px;
   color: slategray;
   transition: all 0.3s ease;
@@ -171,25 +220,42 @@ body{
 .like>li:last-child{
   margin-bottom:0;
 }
+.like-box{
+  margin: 20px auto;
+}
 .like{
-  float:right;
-  margin-right: 400px;
-  background-color:#eaeaea;
-  padding: 30px;
-
+  margin: 20px 0 0;
+  background-color:rgba(23, 56, 68, 0.15);
+  padding:50px 0 100px 0;
+  text-align: center;
+  
 }
 
 .kurage{
-  margin-left: 400px;
   position: relative;
   animation: slideIn_r 1.5s ease;
 }
+.fluffy{
+  animation: fluffy1 3s ease infinite;
+}
+
+@keyframes fluffy1 {
+  0% { transform:translateY(0) }
+  5% { transform:translateY(0) }
+  10% { transform:translateY(0) }
+  20% { transform:translateY(-15px) }
+  25% { transform:translateY(0) }
+  30% { transform:translateY(-15px) }
+  50% { transform:translateY(0) }
+  100% { transform:translateY(0) }
+}
+
 .mark>li{
   background-color: #fff;
   font-size: 28px;
-  margin-bottom: 30px;
+  margin:0 auto 30px;
   line-height: 30px;
-  width:500px;
+  width:50%;
   padding:10px;
   color: slategray;
   transition: all 0.3s ease;
@@ -203,11 +269,10 @@ body{
   
 }
 .mark{
-  margin:auto;
-  width:520px;
-  background-color:#eaeaea;
-  padding: 30px;
-  margin-bottom: 30px;
+  margin:20px 0 0;
+  background-color:rgba(23, 56, 68, 0.15);
+  padding: 50px 0 80px 0;
+  text-align: center;
 }
 
 @keyframes slideIn_r{
@@ -244,9 +309,17 @@ body{
 
 
 /*ここからフォーム*/
+<<<<<<< HEAD
 .contact-comment{
+=======
+.contact{
+height: auto;
+}
+.contact-comment{
+  width: 100%;
+>>>>>>> responsive
   background-color: #ffcb2b;
-  padding: 30px 50px;
+  padding: 30px 0;
   color: #fff;
   text-align: center;
 /*  縦のpadding30px,横のpadding50px*/
@@ -287,8 +360,25 @@ form{
   line-height: 40px;
 }
 /*line-heightは行の高さ*/
+<<<<<<< HEAD
 
 /*ボタン*/
+=======
+form{
+  width: 100%;
+  background-color: #eaeaea;
+  padding:30px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.form-group{
+  display: flex;
+  margin: 30px auto;
+  height: 40px;
+  align-items:center;
+}
+>>>>>>> responsive
 .button{
   background-color: #ffcb2b;
   color:white;
@@ -299,10 +389,18 @@ form{
   border-radius: 5px;
   text-align: center;
 }
+<<<<<<< HEAD
 .stamp-box{
   margin-bottom: 50px;
   background-color: #fff;
 }
+=======
+select{
+  font-size:18px;
+}
+
+
+>>>>>>> responsive
 
 .nyago{
   display: block;
@@ -315,7 +413,11 @@ form{
   justify-content: center;
   flex-wrap: wrap;
   background-color: #fff;
+<<<<<<< HEAD
   margin: 3% 20% 5%;
+=======
+  margin: 5% 10% 5%;
+>>>>>>> responsive
   position: relative;
   animation: FadeIn 1.5s ease;
 
@@ -338,18 +440,21 @@ a{
   padding:20px 20px 40px;
   display: block;}
 .bg3{
-  height: 600px;
+  
 /*  cssでbackground画像指定*/
   background:url(../img/fb39c84d2a8eeeca49db24ed4f1428d4_m.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  margin:auto;
 }
 .footer{
+<<<<<<< HEAD
   height:70px;
   width: 100vw;
+=======
+  width: 100%;
+>>>>>>> responsive
   background-color:#ffcb2b; 
   padding:10px 0;
 }
@@ -358,4 +463,159 @@ a{
   line-height: 25px;
   color:darkslategrey;
   font-size: 6px;
+}
+/*レスポンシブ*/
+/*小型PC*/
+@media screen and(max-width:1280px){
+  
+  }
+
+/*タブレット*/
+@media screen and (max-width:960px){
+   
+  .profile{
+  flex-flow: column;
+  }
+
+  .profile li:nth-child(odd):hover{
+    background-color: #f9a725;
+    font-size: 20px;
+  }
+  .profile>li:nth-child(odd){
+    height: 30px;
+    width: 300px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .profile>li:nth-child(even){
+    height: 50px;
+    width: 300px;
+    line-height:50px;
+    margin:0 auto 20px;
+    font-size: 20px;
+  }
+  .profile>li:first-child{
+    margin-top: 30px;
+  }
+/*
+  .profile>li:nth-child(odd){
+    height: 70px;
+    width: 70px;
+    margin: 30px 0 30px 30px;
+    font-size: 20px;
+    
+  }
+  .profile>li:nth-child(even){
+    height: 70px;
+    width: 200px;
+    font-size: 20px;
+  }
+  .profile>li:first-child{
+    margin-left: 0px;
+  }
+*/
+  .like>li,
+  .mark>li{
+    font-size: 20px;
+    width: 70%;
+  }
+  .like{
+    margin-bottom: 0px;
+  }
+  .stamp_comment{
+    margin-top: 0px;
+  }
+}
+
+/*スマホ*/
+@media screen and (max-width:480px){
+  body{
+    min-width: 375px;
+  }
+  .header{
+    height: 65px;
+  }
+  .header-comment{
+    padding:17.5px 0 17.5px 0;
+  }
+  .hamburger{
+    display: none;
+  }
+  .first-view{
+    margin-top: 65px;
+    margin-bottom: 30px;
+  }
+  .profile{
+  flex-flow: column;
+  }
+
+  .profile li:nth-child(odd):hover{
+    background-color: #f9a725;
+    font-size: 20px;
+  }
+  .profile>li:nth-child(odd){
+    height: 30px;
+    width: 200px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .profile>li:nth-child(even){
+    height: 50px;
+    line-height:50px;
+    margin:0 auto 20px;
+    width: 200px;
+    font-size: 16px;
+  }
+  .like>li,
+  .mark>li{
+    width: 70%;
+    font-size: 16px;
+    text-indent: inherit;
+  }
+  a{
+    font-size: 15px;
+  }
+  form{
+    width: 100%;
+    padding:30px 0 50px 0;
+    
+  }
+  .form-group{
+    margin: 30px 55px;
+    height: 40px;
+    align-items:center;
+  }
+  .label{
+    width: 75px;
+    margin-right: 20px;
+    margin-left: 0px;
+    font-size: 17px;
+    
+  }
+  .input-field{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+  }
+  .button{
+    margin: auto;
+  }
+  .nyago{
+  display: block;
+  width:80px;
+  height:80px;
+  padding: 10px;
+  }
+  .stamp_comment>p{
+    font-size: 18px;
+  }
+  .stamp{
+    margin: 5% 5% 5%;
+  }
+  .kurage{
+    height: 20%;
+    width: 20%;
+  }
 }

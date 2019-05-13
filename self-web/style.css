@@ -19,7 +19,9 @@ body{
   margin:auto;
   height: 110%;
 
+
   
+
 /*  これは黄色のヘッダー*/
 }
 .header{
@@ -36,6 +38,9 @@ body{
   color:#fff;
 
   padding:25px 0 25px 0;
+
+
+
   font-size: 25px;
   position: fixed;
   text-align: center;
@@ -123,6 +128,9 @@ body{
 
   margin: 30px 0 30px 0;
   text-align: center;
+
+
+
   line-height: 80px;
   font-size: 25px;
   transition: all 0.3s ease;
@@ -285,6 +293,9 @@ height: auto;
 }
 .contact-comment{
   width: 100%;
+
+
+
   background-color: #ffcb2b;
   padding: 30px 0;
   color: #fff;
@@ -407,6 +418,9 @@ a{
 .footer{
 
   width: 100%;
+
+
+
   background-color:#ffcb2b; 
   padding:10px 0;
 }

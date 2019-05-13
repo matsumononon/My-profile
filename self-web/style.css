@@ -2,33 +2,23 @@ body{
   font-family: 'Yu Gothic','DIN Alternate','Futura',sans-serif;
 }
 #wrapper{
-<<<<<<< HEAD
-  width: 100%;
-  overflow: hidden;
-}
-/*これは背景ボーダー*/
-.bg{
-  width: 100vw;
-=======
+
   overflow: hidden;
   width: 100%;
 }
 /*これは背景ボーダー*/
 .bg{
->>>>>>> responsive
+
 /*  cssでbackground画像指定*/
   background:url(../img/fb39c84d2a8eeeca49db24ed4f1428d4_m.jpg); 
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-<<<<<<< HEAD
-  padding-bottom: 30px;
-  
-=======
+
   margin:auto;
   height: 110%;
->>>>>>> responsive
+
   
 /*  これは黄色のヘッダー*/
 }
@@ -44,11 +34,8 @@ body{
 .header-comment{
   width:100%;
   color:#fff;
-<<<<<<< HEAD
-  padding:27px;
-=======
+
   padding:25px 0 25px 0;
->>>>>>> responsive
   font-size: 25px;
   position: fixed;
   text-align: center;
@@ -108,17 +95,10 @@ body{
   width: 100%;
   position: relative;
   animation: FadeIn 1.5s ease;
-<<<<<<< HEAD
-  margin:0 auto; 
-  padding-top: 85px; 
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-=======
+
   margin-top: 85px;
   
->>>>>>> responsive
+
 }
 
 /*プロフィール*/
@@ -127,12 +107,10 @@ body{
   height: 80px;
   width: 80px;
   background-color: #ffcb2b;
-<<<<<<< HEAD
-  margin: 0 0 30px 60px;
-=======
+
   margin: 30px 0 30px 60px;
   text-align: center;
->>>>>>> responsive
+
   line-height: 80px;
   color:#fff;
   font-size: 30px;
@@ -142,27 +120,19 @@ body{
   height: 80px;
   width: 200px;
   background-color: #fff;
-<<<<<<< HEAD
-  margin: 0 0 30px 0;
- 
-=======
+
   margin: 30px 0 30px 0;
   text-align: center;
->>>>>>> responsive
   line-height: 80px;
   font-size: 25px;
   transition: all 0.3s ease;
   color: slategray;
 }
 .profile>li:first-child{
-<<<<<<< HEAD
-    margin-left:0;
-}
 
-=======
   margin-left: 0px;
 }
->>>>>>> responsive
+
 /*フレックスするよ*/
 .flex{
   display:flex;
@@ -309,15 +279,12 @@ text-align: center;
 
 
 /*ここからフォーム*/
-<<<<<<< HEAD
-.contact-comment{
-=======
+
 .contact{
 height: auto;
 }
 .contact-comment{
   width: 100%;
->>>>>>> responsive
   background-color: #ffcb2b;
   padding: 30px 0;
   color: #fff;
@@ -342,7 +309,7 @@ form{
   margin: 30px 0;
   height: 40px;
   align-items:center;
-  width: 100%;
+  width: 50%;
 }
 
 
@@ -360,10 +327,7 @@ form{
   line-height: 40px;
 }
 /*line-heightは行の高さ*/
-<<<<<<< HEAD
 
-/*ボタン*/
-=======
 form{
   width: 100%;
   background-color: #eaeaea;
@@ -378,7 +342,7 @@ form{
   height: 40px;
   align-items:center;
 }
->>>>>>> responsive
+
 .button{
   background-color: #ffcb2b;
   color:white;
@@ -389,18 +353,12 @@ form{
   border-radius: 5px;
   text-align: center;
 }
-<<<<<<< HEAD
-.stamp-box{
-  margin-bottom: 50px;
-  background-color: #fff;
-}
-=======
+
 select{
   font-size:18px;
 }
 
 
->>>>>>> responsive
 
 .nyago{
   display: block;
@@ -413,11 +371,9 @@ select{
   justify-content: center;
   flex-wrap: wrap;
   background-color: #fff;
-<<<<<<< HEAD
-  margin: 3% 20% 5%;
-=======
+
   margin: 5% 10% 5%;
->>>>>>> responsive
+
   position: relative;
   animation: FadeIn 1.5s ease;
 
@@ -449,12 +405,8 @@ a{
   background-attachment: fixed;
 }
 .footer{
-<<<<<<< HEAD
-  height:70px;
-  width: 100vw;
-=======
+
   width: 100%;
->>>>>>> responsive
   background-color:#ffcb2b; 
   padding:10px 0;
 }
@@ -583,7 +535,7 @@ a{
     
   }
   .form-group{
-    margin: 30px 55px;
+    margin: 30px auto;
     height: 40px;
     align-items:center;
   }

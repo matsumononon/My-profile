@@ -377,16 +377,16 @@ select{
   height: 200px;
   padding: 20px;
 }
+
 .stamp{
   display:flex;
   justify-content: center;
   flex-wrap: wrap;
   background-color: #fff;
-
   margin: 5% 10% 5%;
 
   position: relative;
-  animation: FadeIn 1.5s ease;
+/*  animation: FadeIn 1.5s ease;*/
 
 }
 .stamp_comment{

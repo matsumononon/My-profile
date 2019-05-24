@@ -315,13 +315,7 @@ form{
   margin-right:auto;
  
   }
-.form-group{
-  display: flex;
-  margin: 30px 0;
-  height: 40px;
-  align-items:center;
-  width: 50%;
-}
+
 
 
 .label{
@@ -352,6 +346,7 @@ form{
   margin: 30px auto;
   height: 40px;
   align-items:center;
+/*  width: 50%;*/
 }
 
 .button{
@@ -360,9 +355,9 @@ form{
   font-size: 20px;
   width: 120px;
   line-height: 50px;
-  margin-left: 44.7%;
   border-radius: 5px;
   text-align: center;
+  margin:0 auto;
 }
 
 select{
@@ -371,9 +366,25 @@ select{
 
 
 
-.nyago{
+img#stamp01,
+img#stamp02,
+img#stamp03,
+img#stamp04,
+img#stamp05,
+img#stamp06,
+img#stamp07,
+img#stamp08,
+img#stamp09,
+img#stamp10,
+img#stamp11,
+img#stamp12,
+img#stamp13,
+img#stamp14,
+img#stamp15,
+img#stamp16
+{
   display: block;
-  width:200px;
+  width: 200px;
   height: 200px;
   padding: 20px;
 }

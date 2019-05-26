@@ -89,8 +89,45 @@
       <img id="stamp15" class="nyago" src="../nyago_stamp/stamp_15.png" alt="">
       <img id="stamp16" class="nyago" src="../nyago_stamp/stamp_16.png" alt="">
     </div>
+<!--
+   
     <a href="https://store.line.me/stickershop/product/3787351/ja" class="button-get">GET
     </a>
+-->
+ 
+ 
+ <!--    モーダルボタン-->
+    <div class="d-flex justify-content-center m-5">
+      <button class="btn button-get" data-toggle="modal" data-target="#demoNormalModal">GET</button>
+    </div>
+<!-- モーダルウィンドウ-->
+  <div class="modal fade" id="demoNormalModal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centerd" role="document">
+      <div class="modal-content">
+<!--       モーダルのコンテンツ。ヘッダー、ボディ、フッター含む-->
+        <div class="modal-header">
+          <h5 class="modal-title" id="demoModalTitle">ほんとに買う？</h5>
+          <button class="close" data-dismiss="modal" area-label="close">
+            <span area-hidden="true">&times;</span>
+<!-- &times =特殊文字のバッテンを指定してる。機種依存文字とかにならない。どんなデバイスでも表示できる-->
+          </button>
+        </div>
+        <div class="modal-body">
+<!--          モーダルの内容を書く場所-->
+    <a href="https://store.line.me/stickershop/product/3787351/ja" class="button-get">ほんと
+    </a>
+      <a href="https://store.line.me/stickershop/product/3787351/ja" class="button-get">考え中
+    </a>
+       <p　class="modal-txt">※外部サイトが開きます。</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-dismiss="modal">またこんど</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
   
     <div class="bg3">
     <div class="mark-box">
@@ -126,7 +163,7 @@
     
     </div>
     <div class="form-group">
-      <button type="submit" class="button-submit">SUBMIT</button>
+      <button type="submit" class="btn-submit">SUBMIT</button>
     </div>
     <div class="scroll-box">
       <div class="js-scroll top-txt">TOPへ</div>
@@ -138,7 +175,7 @@
 </div>
 </div>
 </div>
-</div>
+
   
   <div class="footer">
     <p class="footer-txt">yuzu no hikigatari dome tour ni</p>

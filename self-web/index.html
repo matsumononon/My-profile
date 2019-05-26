@@ -12,8 +12,11 @@
   <link rel="stylesheet" href="../slick-1.8.1/slick/slick.css">
   
   <link rel="stylesheet" href="../slick-1.8.1/slick/slick-theme.css">
-  <link rel="stylesheet" href="style.css">
-
+<!--  ↓bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
+<!--  <link rel="stylesheet" href="style.css">-->
+  <link rel="stylesheet" href="../css/sample.css">
 </head>
 <body>
   <div id="wrapper">
@@ -86,9 +89,9 @@
       <img id="stamp15" class="nyago" src="../nyago_stamp/stamp_15.png" alt="">
       <img id="stamp16" class="nyago" src="../nyago_stamp/stamp_16.png" alt="">
     </div>
-    <a href="https://store.line.me/stickershop/product/3787351/ja">
-      つかってね！
+    <a href="https://store.line.me/stickershop/product/3787351/ja" class="button-get">GET
     </a>
+  
     <div class="bg3">
     <div class="mark-box">
      <ul class="mark">
@@ -107,45 +110,52 @@
     <p class="contact-comment">Contact</p>
     <form action="">
 <!--   テキスト入力フォーム-->
-  <div class="form-group">
-    <label for="" class="label">Name</label>
-    <input type="text" class="input-field" placeholder="ex)Yuki Miyake">
+    <div class="form-group">
+      <label for="" class="label">Name</label>
+      <input type="text" class="input-field" placeholder="ex)Yuki Miyake">
     
-  </div>
-  <div class="form-group">
-    <label for="" class="label">Mail-adress</label>
-    <input type="text" class="input-field" placeholder="ex)hsmt_tj_haruna3@mmbs.com">
+    </div>
+    <div class="form-group">
+      <label for="" class="label">Mail-adress</label>
+      <input type="text" class="input-field" placeholder="ex)hsmt_tj_haruna3@mmbs.com">
     
-  </div>
-  <div class="form-group">
-    <label for="" class="label">Tell</label>
-    <input type="text" class="input-field" placeholder="ex)22-2222-222">
+    </div>
+    <div class="form-group">
+      <label for="" class="label">Tell</label>
+      <input type="text" class="input-field" placeholder="ex)22-2222-222">
     
-  </div>
-
-              <div class="form-group">
-                <button type="submit" name="btn" class="button">送信  </button>
-    
-              </div>
-            </form>
-          </div>
- 
-  </div>
-   </div>
-  </div>
-  
-      <div class="footer">
-        <p>yuzu no hikigatari dome tour ni</p>
-        <p>i ki ta i</p>
-  
+    </div>
+    <div class="form-group">
+      <button type="submit" class="button-submit">SUBMIT</button>
+    </div>
+    <div class="scroll-box">
+      <div class="js-scroll top-txt">TOPへ</div>
+      <div class="js-scroll">
+         <img src="../img/scroll-btn.png" alt="scroll-btn" class="scroll-btn">
       </div>
+    </div>
+  </form>
+</div>
+</div>
+</div>
+</div>
+  
+  <div class="footer">
+    <p class="footer-txt">yuzu no hikigatari dome tour ni</p>
+    <p class="footer-txt">i ki ta i</p>
+  
+  </div>
   
 
 <!--   jQuery,jsの順に設置 -->
 <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!--slickのjs-->
+<!--  ↓popper-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<!--  ↓bootstrap-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!--↓slick-->
   <script type="text/javascript" src="../slick-1.8.1/slick/slick.min.js"></script>
 
   <script src="app.js"></script>
